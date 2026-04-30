@@ -1,9 +1,6 @@
 import mpi.*;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
@@ -37,6 +34,8 @@ public class Main {
         int limit = 30;
         String allowedHost = "www.famnit.upr.si";
 
+        long start = System.currentTimeMillis();
+
         Queue<String> toVisit = new LinkedList<>();
         Set<String> visited = new HashSet<>();
         Logger logger = new Logger("crawl_distributed.txt");
@@ -68,7 +67,7 @@ public class Main {
             int workerRank = status.source; // ANY_SOURCE means that we dont care who sent the message
                                             // But then we check status.source to figure out who it was
             String received = new String(buffer, 0, status.count).trim();
-            // status count tells me how many characters were sent and how big the buffer needs to be
+            // status count tells us how many characters were sent and how big the buffer needs to be
             String[] parts = received.split("\\" + SEPARATOR); // split the message
             String crawledUrl = parts[0]; // Position 0 is the name of the page,
                                           // the rest are the links from that page
@@ -100,5 +99,59 @@ public class Main {
 
         logger.log("DONE. Visited " + visited.size() + " pages.");
         logger.close();
+        long end = System.currentTimeMillis(); // stop timer
+        long seconds = (end - start) / 1000;
+        long miliseconds = (end - start) % 1000;
+        System.out.println("Total time: " + seconds + "." + miliseconds + " secs");
+    }
+
+    private static void worker(int rank) throws Exception {
+
+        HttpsFetcher fetcher = new HttpsFetcher();
+        Extractor extractor = new Extractor();
+
+        while(true) {
+
+            char[] buffer = new char[BUFFER_SIZE];
+            Status status = MPI.COMM_WORLD.Recv(buffer, 0, buffer.length, MPI.CHAR, MASTER, MPI.ANY_TAG);
+
+            if (status.tag == DONE_TAG) break;
+
+            String url = new String(buffer, 0, status.count).trim(); // Convert the buffer back to a string
+            StringBuilder result = new StringBuilder(url);                 // and build the result string
+
+            try {
+
+                String host = extractHost(url); // Extract host and path
+                String path = extractPath(url); // from the URL so we can fetch it
+
+                String response = fetcher.fetch(host, path);
+                List<String> links = extractor.extractLinks(response);
+
+                for (String link : links) {   // Pack all links into the result string separated by SEPARATOR
+                    if (link != null && !link.isBlank()) {  // then master will split this apart when it receives it
+                        result.append(SEPARATOR).append(link.trim());
+                    }
+                }
+            } catch (Exception e) {
+                result.append(SEPARATOR).append("ERROR: ").append(e.getMessage());
+            }
+
+            // Send the result back to master
+            char[] msg = result.toString().toCharArray();
+            MPI.COMM_WORLD.Send(msg, 0, msg.length, MPI.CHAR, MASTER, RESULT_TAG);
+        }
+    }
+
+    private static String extractHost(String url) {
+        String rest = url.substring("https://".length());
+        int slash = rest.indexOf('/');
+        return slash == -1 ? rest : rest.substring(0, slash);
+    }
+
+    private static String extractPath(String url) {
+        String rest = url.substring("https://".length());
+        int slash = rest.indexOf('/');
+        return slash == -1 ? "/" : rest.substring(slash);
     }
 }
