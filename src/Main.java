@@ -31,7 +31,7 @@ public class Main {
 
     private static void master(int size) throws Exception {
         String startUrl = "https://www.famnit.upr.si/sl/";
-        int limit = 30;
+        int limit = 20;
         String allowedHost = "www.famnit.upr.si";
 
         long start = System.currentTimeMillis();
@@ -56,6 +56,10 @@ public class Main {
                 // P5: which worker to send to
                 // P6: the tag — TAG_WORK means "go crawl this URL"
                 busyWorkers++;
+            } else {
+            // No work for this worker — shut it down immediately
+            char[] done = "DONE".toCharArray();
+            MPI.COMM_WORLD.Send(done, 0, done.length, MPI.CHAR, rank, DONE_TAG);
             }
         }
 
@@ -128,9 +132,12 @@ public class Main {
                 String response = fetcher.fetch(host, path);
                 List<String> links = extractor.extractLinks(response);
 
-                for (String link : links) {   // Pack all links into the result string separated by SEPARATOR
-                    if (link != null && !link.isBlank()) {  // then master will split this apart when it receives it
-                        result.append(SEPARATOR).append(link.trim());
+                String allowedHost = extractHost(url);
+                for (String link : links) {              // Pack all links into one message with separators
+                    if (link == null || link.isBlank()) continue;
+                    String absolute = toAbsoluteUrl(url, link.trim(), allowedHost);
+                    if (absolute != null) {
+                        result.append(SEPARATOR).append(absolute);
                     }
                 }
             } catch (Exception e) {
@@ -153,5 +160,34 @@ public class Main {
         String rest = url.substring("https://".length());
         int slash = rest.indexOf('/');
         return slash == -1 ? "/" : rest.substring(slash);
+    }
+
+    private static String toAbsoluteUrl(String currentUrl, String link, String allowedHost) {
+        if (link.startsWith("#")) return null;
+        if (link.startsWith("mailto:")) return null;
+        if (link.startsWith("javascript:")) return null;
+        int hash = link.indexOf('#');
+        if (hash != -1) {
+            link = link.substring(0, hash).trim();
+            if (link.isEmpty()) return null;
+        }
+        if (link.startsWith("https://")) {
+            String host = extractHost(link);
+            if (host == null || !host.equalsIgnoreCase(allowedHost)) return null;
+            return link;
+        }                                                              // Again I had to turn to
+        if (link.startsWith("http://")) return null;                   // ChatGPT to assist with writing
+        if (link.startsWith("//")) {                                   // the URL conversion because
+            String abs = "https:" + link;                              // i simply could not do it on my own
+            String host = extractHost(abs);
+            if (host == null || !host.equalsIgnoreCase(allowedHost)) return null;
+            return abs;
+        }
+        if (link.startsWith("/")) return "https://" + allowedHost + link;
+        String currentPath = extractPath(currentUrl);
+        if (currentPath == null) currentPath = "/";
+        int lastSlash = currentPath.lastIndexOf('/');
+        String dir = (lastSlash == -1) ? "/" : currentPath.substring(0, lastSlash + 1);
+        return "https://" + allowedHost + dir + link;
     }
 }
