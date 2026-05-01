@@ -31,12 +31,13 @@ public class Main {
 
     private static void master(int size) throws Exception {
         String startUrl = "https://www.famnit.upr.si/sl/";
-        int limit = 20;
+        int limit = 10;
         String allowedHost = "www.famnit.upr.si";
 
         long start = System.currentTimeMillis();
 
         Queue<String> toVisit = new LinkedList<>();
+        Set<String> queued = new HashSet<>();
         Set<String> visited = new HashSet<>();
         Logger logger = new Logger("crawl_distributed.txt");
         toVisit.add(startUrl);
@@ -47,6 +48,7 @@ public class Main {
             if (!toVisit.isEmpty()) {
                 String url = toVisit.poll();
                 visited.add(url);
+                queued.add(url);
                 char[] msg = url.toCharArray();
                 MPI.COMM_WORLD.Send(msg, 0, msg.length, MPI.CHAR, rank, WORK_TAG);
                 // P1: the array we are sending
@@ -81,6 +83,7 @@ public class Main {
             for (String line : urlSection.split("\n")) {
                 String link = line.trim();
                 if (!link.isEmpty() && !visited.contains(link)) {
+                    queued.add(link);
                     toVisit.add(link);
                 }
             }

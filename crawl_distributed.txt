@@ -1,0 +1,235 @@
+VISIT: https://www.famnit.upr.si/sl/ STATUS: 200
+LINK: https://www.famnit.upr.si/css/style.css.php?base_hue=200 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/css/style_print.css STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/css/mobile.css STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/latest:rss STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/img/favicon3.png STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/en STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-magistrski-studij STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-doktorski-studij STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/mednarodno-sodelovanje/izmenjave/studenti STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/latest STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/calendar STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/latest:rss STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/files/978-961-6984-77-5.min.pdf STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/studij/ukrepi22 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/soustvarjaj-prihodno STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/senat-up-sprejel-nov STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/vabljeni-na-informat-11 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/lekov-dogodek-scienc-4 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/prijava-19-20 STATUS: 404 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/informativni-dan STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/prijava-21-22 STATUS: 404 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/informativni-dan STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/prijava STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/konference/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/konference STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/konference/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/poljudna-predavanja STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/poljudna-predavanja STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/delavnice STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/poletne-sole STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/poletne-sole STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/raziskovanje/programi-in-projekti/vrt-purissima/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/univerza-na-primorsk-6 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/gallery STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/dostopnost STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/avtorske-pravice STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si//sl/raziskovanje/programi-in-projekti/InnoRenew STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+
+VISIT: https://www.famnit.upr.si/css/style.css.php?base_hue=200 STATUS: 200
+
+VISIT: https://www.famnit.upr.si/css/style_print.css STATUS: 200
+
+VISIT: https://www.famnit.upr.si/css/mobile.css STATUS: 200
+
+VISIT: https://www.famnit.upr.si/sl/novice/latest:rss STATUS: 200
+LINK: https://www.famnit.upr.si/sl/resources/files/novice_studenti/sciencebeat-2026---slo.pdf STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/sl/resources/files/novice/sciencebeat-2026faq.pdf STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/izobrazevanje/podiplomski-magistrski-studij/matematika STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/izobrazevanje/podiplomski-magistrski-studij/racunalnistvo-in-informatika/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-magistrski-studij/psihologija STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-magistrski-studij/podatk-znan STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-magistrski-studij/matematika-s-financnim-inzeniringom-new STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-magistrski-studij/racunalnistvo-in-informatika/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-magistrski-studij/podatk-znan STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/izobrazevanje/podiplomski-magistrski-studij/matematika STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-magistrski-studij/psihologija STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-magistrski-studij/matematika-s-financnim-inzeniringom-new STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/en/education/master/data-science STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+LINK: https://www.famnit.upr.si/en/education/master/mathematical-sciences/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/novice/latest:rss
+
+VISIT: https://www.famnit.upr.si/img/favicon3.png STATUS: 200
+
+VISIT: https://www.famnit.upr.si/ STATUS: 200 REDIRECT: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/css/style.css.php?base_hue=200 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/css/style_print.css STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/css/mobile.css STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/latest:rss STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/img/favicon3.png STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/en STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-magistrski-studij STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-doktorski-studij STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/mednarodno-sodelovanje/izmenjave/studenti STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/latest STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/calendar STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/latest:rss STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/files/978-961-6984-77-5.min.pdf STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/studij/ukrepi22 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/soustvarjaj-prihodno STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/senat-up-sprejel-nov STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/vabljeni-na-informat-11 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/lekov-dogodek-scienc-4 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/prijava-19-20 STATUS: 404 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/informativni-dan STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/prijava-21-22 STATUS: 404 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/informativni-dan STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/prijava STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/konference/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/konference STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/konference/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/poljudna-predavanja STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/poljudna-predavanja STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/delavnice STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/poletne-sole STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/poletne-sole STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/raziskovanje/programi-in-projekti/vrt-purissima/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/novice/univerza-na-primorsk-6 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/gallery STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/dostopnost STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si/sl/avtorske-pravice STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+LINK: https://www.famnit.upr.si//sl/raziskovanje/programi-in-projekti/InnoRenew STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/
+
+VISIT: https://www.famnit.upr.si/sl STATUS: 200
+LINK: https://www.famnit.upr.si/css/style.css.php?base_hue=200 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/css/style_print.css STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/css/mobile.css STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/novice/latest:rss STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/img/favicon3.png STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/en STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-magistrski-studij STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/izobrazevanje/podiplomski-doktorski-studij STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/mednarodno-sodelovanje/izmenjave/studenti STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/novice/latest STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/calendar STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/novice/latest:rss STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/files/978-961-6984-77-5.min.pdf STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/studij/ukrepi22 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/novice/soustvarjaj-prihodno STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/novice/senat-up-sprejel-nov STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/novice/vabljeni-na-informat-11 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/novice/lekov-dogodek-scienc-4 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/prijava-19-20 STATUS: 404 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/informativni-dan STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/prijava-21-22 STATUS: 404 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/informativni-dan STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/bodoci-studenti/prijava STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/konference/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/konference STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/konference/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/poljudna-predavanja STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/poljudna-predavanja STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/delavnice STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/poletne-sole STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/poletne-sole STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/raziskovanje/programi-in-projekti/vrt-purissima/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/novice/univerza-na-primorsk-6 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/gallery STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/dostopnost STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si/sl/avtorske-pravice STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+LINK: https://www.famnit.upr.si//sl/raziskovanje/programi-in-projekti/InnoRenew STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl
+
+VISIT: https://www.famnit.upr.si/en STATUS: 200
+LINK: https://www.famnit.upr.si/css/style.css.php?base_hue=200 STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/css/style_print.css STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/css/mobile.css STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/sl/novice/latest:rss STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/img/favicon3.png STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/sl STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/education/undergraduate STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/education/master STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/education/doctoral STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/mobility/students STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/seminars/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/seminars STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/news/latest STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/education/MEASURES STATUS: 404 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si//en/news/co-create-the-future STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/news/online-info-session STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/news/up-senate-adopts-a-n STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/news/leks-sciencebeat-1 STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/education/enrolment1920 STATUS: 404 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/education/enrolment-->
+<!--1920 STATUS: 400 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/education/enrolment--2122 STATUS: 404 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/education/promotional%20events STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/education/enrolment STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/conferences/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/conferences STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/conferences/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/sis/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/student-pages/timetables STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/email/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/workshops STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/workshops STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/workshops STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/summer-schools STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/summer-schools STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/sl/raziskovanje/programi-in-projekti/vrt-purissima/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/news/university-of-primor-1 STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/gallery STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/accessibility STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+LINK: https://www.famnit.upr.si/en/copyright STATUS: 200 FOUND ON: https://www.famnit.upr.si/en
+
+VISIT: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij STATUS: 200
+LINK: https://www.famnit.upr.si/css/style.css.php?base_hue=200 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/css/style_print.css STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/css/mobile.css STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/novice/latest:rss STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/img/favicon3.png STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/en STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/izobrazevanje/dodiplomski-studij/matematika/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/izobrazevanje/dodiplomski-studij/matematika-v-ekonomiji-in-financah/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/izobrazevanje/dodiplomski-studij/racunalnistvo-in-informatika/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl//izobrazevanje/dodiplomski-studij/bioinformatika/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl//izobrazevanje/dodiplomski-studij/varstvena-biologija STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/izobrazevanje/dodiplomski-studij/biopsihologija/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl//izobrazevanje/dodiplomski-studij/agronomija STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl//izobrazevanje/dodiplomski-studij/lesarstvo STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl//izobrazevanje/dodiplomski-studij/ma-ra STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/poljudna-predavanja STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/poljudna-predavanja STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/delavnice STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/poletne-sole STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/poletne-sole STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/raziskovanje/programi-in-projekti/vrt-purissima/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/novice/univerza-na-primorsk-6 STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/ STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/gallery STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/dostopnost STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si/sl/avtorske-pravice STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+LINK: https://www.famnit.upr.si//sl/raziskovanje/programi-in-projekti/InnoRenew STATUS: 200 FOUND ON: https://www.famnit.upr.si/sl/izobrazevanje/dodiplomski-studij
+
+DONE. Visited 10 pages.
