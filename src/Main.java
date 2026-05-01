@@ -10,7 +10,7 @@ public class Main {
     static final int DONE_TAG = 2;   // the type of message or "instruction"
     static final int RESULT_TAG = 3; //
 
-    static final int BUFFER_SIZE = 100000;
+    static final int BUFFER_SIZE = 500000;
     static final String SEPARATOR = "|"; // This will be used to unpack the links
                                          // which will be sent in a single message
 
@@ -71,16 +71,16 @@ public class Main {
             int workerRank = status.source; // ANY_SOURCE means that we dont care who sent the message
                                             // But then we check status.source to figure out who it was
             String received = new String(buffer, 0, status.count).trim();
-            // status count tells us how many characters were sent and how big the buffer needs to be
-            String[] parts = received.split("\\" + SEPARATOR); // split the message
-            String crawledUrl = parts[0]; // Position 0 is the name of the page,
-                                          // the rest are the links from that page
-            logger.log("VISIT: " + crawledUrl);
 
-            for (int i = 1; i < parts.length; i++) {
-                String link = parts[i].trim();
-                if (link.isEmpty()) continue;
-                if (!visited.contains(link) && link.startsWith("https://" + allowedHost)) {
+            String[] sections = received.split("\\|\\|\\|");
+            String logSection = sections[0];
+            String urlSection = sections.length > 1 ? sections[1] : "";
+
+            logger.log(logSection);
+
+            for (String line : urlSection.split("\n")) {
+                String link = line.trim();
+                if (!link.isEmpty() && !visited.contains(link)) {
                     toVisit.add(link);
                 }
             }
@@ -114,38 +114,54 @@ public class Main {
         HttpsFetcher fetcher = new HttpsFetcher();
         Extractor extractor = new Extractor();
 
-        while(true) {
+        while (true) {
 
             char[] buffer = new char[BUFFER_SIZE];
             Status status = MPI.COMM_WORLD.Recv(buffer, 0, buffer.length, MPI.CHAR, MASTER, MPI.ANY_TAG);
 
             if (status.tag == DONE_TAG) break;
 
-            String url = new String(buffer, 0, status.count).trim(); // Convert the buffer back to a string
-            StringBuilder result = new StringBuilder(url);                 // and build the result string
+            String url = new String(buffer, 0, status.count).trim();
+            String allowedHost = extractHost(url);
+
+            StringBuilder logSection = new StringBuilder();
+            StringBuilder urlSection = new StringBuilder();
 
             try {
+                FetchResult pageFetch = fetchWithRedirects(url, allowedHost, 5, fetcher);
 
-                String host = extractHost(url); // Extract host and path
-                String path = extractPath(url); // from the URL so we can fetch it
+                logSection.append("\nVISIT: ").append(url)
+                        .append(" STATUS: ").append(pageFetch.statusText)
+                        .append(pageFetch.finalUrl.equals(url) ? "" : (" REDIRECT: " + pageFetch.finalUrl))
+                        .append("\n");
 
-                String response = fetcher.fetch(host, path);
-                List<String> links = extractor.extractLinks(response);
+                List<String> links = extractor.extractLinks(pageFetch.response);
 
-                String allowedHost = extractHost(url);
-                for (String link : links) {              // Pack all links into one message with separators
-                    if (link == null || link.isBlank()) continue;
-                    String absolute = toAbsoluteUrl(url, link.trim(), allowedHost);
-                    if (absolute != null) {
-                        result.append(SEPARATOR).append(absolute);
-                    }
+                for (String rawLink : links) {
+                    if (rawLink == null) continue;
+                    String link = rawLink.trim();
+                    if (link.isEmpty()) continue;
+
+                    String absolute = toAbsoluteUrl(pageFetch.finalUrl, link, allowedHost);
+                    if (absolute == null) continue;
+
+                    FetchResult linkFetch = fetchWithRedirects(absolute, allowedHost, 5, fetcher);
+
+                    logSection.append("LINK: ").append(absolute)
+                            .append(" STATUS: ").append(linkFetch.statusText)
+                            .append(" FOUND ON: ").append(pageFetch.finalUrl)
+                            .append("\n");
+
+                    urlSection.append(absolute).append("\n");
                 }
+
             } catch (Exception e) {
-                result.append(SEPARATOR).append("ERROR: ").append(e.getMessage());
+                logSection.append("\nVISIT: ").append(url)
+                        .append(" STATUS: ERROR (").append(e.getMessage()).append(")\n");
             }
 
-            // Send the result back to master
-            char[] msg = result.toString().toCharArray();
+            String message = logSection.toString() + "|||" + urlSection.toString();
+            char[] msg = message.toCharArray();
             MPI.COMM_WORLD.Send(msg, 0, msg.length, MPI.CHAR, MASTER, RESULT_TAG);
         }
     }
@@ -189,5 +205,73 @@ public class Main {
         int lastSlash = currentPath.lastIndexOf('/');
         String dir = (lastSlash == -1) ? "/" : currentPath.substring(0, lastSlash + 1);
         return "https://" + allowedHost + dir + link;
+    }
+
+    private static class FetchResult {
+        final String finalUrl;
+        final String response;
+        final String statusText;
+        FetchResult(String finalUrl, String response, String statusText) {
+            this.finalUrl = finalUrl;
+            this.response = response;
+            this.statusText = statusText;
+        }
+    }
+
+    private static FetchResult fetchWithRedirects(String url, String allowedHost, int maxRedirects, HttpsFetcher fetcher) {
+        String current = url;
+        for (int i = 0; i <= maxRedirects; i++) {
+            try {
+                String host = extractHost(current);
+                String path = extractPath(current);
+                if (host == null || path == null)
+                    return new FetchResult(current, "", "SKIP (null url)");
+                if (!host.equalsIgnoreCase(allowedHost))
+                    return new FetchResult(current, "", "SKIP (external domain)");
+                String response = fetcher.fetch(host, path);
+                int status = getStatusCode(response);
+                if (!isRedirect(status))
+                    return new FetchResult(current, response, String.valueOf(status));
+                String location = getHeaderValue(response, "Location");
+                if (location == null || location.isBlank())
+                    return new FetchResult(current, response, status + " (redirect but no Location)");
+                String next = toAbsoluteUrl(current, location.trim(), allowedHost);
+                if (next == null)
+                    return new FetchResult(current, response, status + " (redirect to external/invalid)");
+                current = next;
+            } catch (Exception e) {
+                return new FetchResult(current, "", "ERROR (" + e.getMessage() + ")");
+            }
+        }
+        return new FetchResult(current, "", "ERROR (too many redirects)");
+    }
+
+    private static boolean isRedirect(int status) {
+        return status == 301 || status == 302 || status == 303 || status == 307 || status == 308;
+    }
+
+    private static String getHeaderValue(String response, String headerName) {
+        if (response == null) return null;
+        String[] lines = response.split("\n");
+        for (String line : lines) {
+            String trimmed = line.trim();
+            if (trimmed.isEmpty()) break;
+            if (trimmed.toLowerCase().startsWith(headerName.toLowerCase() + ":"))
+                return trimmed.substring(headerName.length() + 1).trim();
+        }
+        return null;
+    }
+
+    private static int getStatusCode(String response) {
+        if (response == null || response.isEmpty()) return -1;
+        int newline = response.indexOf('\n');
+        String firstLine = (newline == -1) ? response.trim() : response.substring(0, newline).trim();
+        int firstSpace = firstLine.indexOf(' ');
+        if (firstSpace == -1) return -1;
+        int secondSpace = firstLine.indexOf(' ', firstSpace + 1);
+        if (secondSpace == -1) return -1;
+        String codeStr = firstLine.substring(firstSpace + 1, secondSpace).trim();
+        try { return Integer.parseInt(codeStr); }
+        catch (NumberFormatException e) { return -1; }
     }
 }
