@@ -120,6 +120,12 @@ public class Main {
             }
         }
 
+        while (!idleWorkers.isEmpty()) {
+            int idleRank = idleWorkers.poll();
+            char[] done = "DONE".toCharArray();
+            MPI.COMM_WORLD.Send(done, 0, done.length, MPI.CHAR, idleRank, DONE_TAG);
+        }
+
         logger.log("DONE. Visited " + visited.size() + " pages.");
         logger.close();
         long end = System.currentTimeMillis(); // stop timer
