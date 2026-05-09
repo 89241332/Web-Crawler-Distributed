@@ -98,7 +98,7 @@ public class Main {
 
             for (String line : urlSection.split("\n")) {
                 String link = line.trim();
-                if (!link.isEmpty() && !visited.contains(link)) {
+                if (!link.isEmpty() && !queued.contains(link)) {
                     queued.add(link);
                     toVisit.add(link);
                 }
