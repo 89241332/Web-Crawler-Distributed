@@ -42,6 +42,7 @@ public class Main {
         toVisit.add(startUrl);
 
         int busyWorkers = 0;
+        Queue<Integer> idleWorkers = new LinkedList<>();
 
         for (int rank = 1; rank < size; rank++) {
             if (!toVisit.isEmpty()) {
@@ -58,13 +59,29 @@ public class Main {
                 // P6: the tag — TAG_WORK means "go crawl this URL"
                 busyWorkers++;
             } else {
-            // No work for this worker — shut it down immediately
-            char[] done = "DONE".toCharArray();
-            MPI.COMM_WORLD.Send(done, 0, done.length, MPI.CHAR, rank, DONE_TAG);
+            idleWorkers.add(rank);
             }
         }
 
         while (busyWorkers > 0) {
+
+            while (!idleWorkers.isEmpty() && !toVisit.isEmpty() && visited.size() < limit) {
+                int idleRank = idleWorkers.poll();
+                String url = toVisit.poll();
+                visited.add(url);
+                char[] msg = url.toCharArray();
+                MPI.COMM_WORLD.Send(msg, 0, msg.length, MPI.CHAR, idleRank, WORK_TAG);
+                busyWorkers++;
+            }
+
+            if (busyWorkers == 0) {
+                while (!idleWorkers.isEmpty()) {
+                    int idleRank = idleWorkers.poll();
+                    char[] done = "DONE".toCharArray();
+                    MPI.COMM_WORLD.Send(done, 0, done.length, MPI.CHAR, idleRank, DONE_TAG);
+                }
+                break;
+            }
 
             char[] buffer = new char[BUFFER_SIZE];
             Status status = MPI.COMM_WORLD.Recv(buffer, 0, buffer.length, MPI.CHAR, MPI.ANY_SOURCE, RESULT_TAG);
