@@ -16,6 +16,7 @@ INTELLIJ SETUP
 
 3. Create a Run Configuration — go to Run → Edit Configurations → + → Application and set:
  Main class: runtime.starter.MPJRun
+ (Modify options -> Add VM options if not yet added)
  VM options: -jar /path/to/mpj/lib/starter.jar Main -np 4
  Environment variables: MPJ_HOME=/path/to/mpj
 
