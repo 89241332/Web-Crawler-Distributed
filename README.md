@@ -4,7 +4,7 @@ README — Spider-Man Distributed (MPI Web Crawler)
 REQUIREMENTS
 ------------
 - Java JDK 8 or higher
-- MPJ Express
+- MPJ Express (already installed on this machine)
 
 INTELLIJ SETUP
 --------------
@@ -12,27 +12,25 @@ INTELLIJ SETUP
 
 2. Add the MPJ library:
       File → Project Structure → Libraries → + → Java
-      Navigate to: $MPJ_HOME/lib and select all .jar files
+      Navigate to $MPJ_HOME/lib and select all .jar files
 
-3. Set up Run Configuration:
-      Run → Edit Configurations → + → Application
-      Main class: Main
-      VM options: (leave empty)
-      Program arguments: (leave empty)
+3. Create a Run Configuration — go to Run → Edit Configurations → + → Application and set:
 
-4. In Edit Configurations, change the run type to JAR:
-      Path to JAR: $MPJ_HOME/lib/starter.jar
-      Program arguments: -np 4 Main
-      Working directory: path to the src/ folder
+   Field                  Value
+   -------                -------
+   Main class             runtime.starter.MPJRun
+   VM options             -jar /path/to/mpj/lib/starter.jar Main -np 4
+   Environment variables  MPJ_HOME=/path/to/mpj
 
-5. Set environment variable in Edit Configurations:
-      Environment variables: MPJ_HOME=/path/to/mpj
+   Replace /path/to/mpj with the actual path to MPJ Express
+   on this machine, for example /home/user/mpj-v0_44
 
-6. Apply changes and run the project
+4. Click Apply and run the project
 
 CONFIGURATION
 -------------
-To change the start URL or page limit, edit Main.java:
+To change the start URL or page limit, edit these lines
+at the top of master() in Main.java and rebuild before running:
 
       String startUrl = "https://www.famnit.upr.si/sl/";
       int limit = 20;
