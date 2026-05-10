@@ -3,7 +3,7 @@ README — Spider-Man Distributed (MPI Web Crawler)
 
 REQUIREMENTS
 ------------
-- Java JDK 8 or higher
+- Java JDK 25 or higher
 - MPJ Express (already installed on this machine)
 
 INTELLIJ SETUP
