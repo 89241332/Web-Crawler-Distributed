@@ -11,19 +11,18 @@ INTELLIJ SETUP
 1. Open the project in IntelliJ
 
 2. Add the MPJ library:
-      File → Project Structure → Libraries → + → Java
-      Navigate to $MPJ_HOME/lib and select all .jar files
+   `File → Project Structure → Libraries → + → Java`
+   Navigate to `$MPJ_HOME/lib` and select all `.jar` files
 
-3. Create a Run Configuration — go to Run → Edit Configurations → + → Application and set:
- Main class: runtime.starter.MPJRun
- (Modify options -> Add VM options if not yet added)
- VM options: -jar /path/to/mpj/lib/starter.jar Main -np 4
- Environment variables: MPJ_HOME=/path/to/mpj
+3. Create a Run Configuration — go to `Run → Edit Configurations → + → Application` and set:
 
-   Replace /path/to/mpj with the actual path to MPJ Express
-   on this machine, for example /home/user/mpj-v0_44
+| Field                | Value                                          |
+|----------------------|------------------------------------------------|
+| Main class           | `runtime.starter.MPJRun`                       |
+| VM options           | `-jar /path/to/mpj/lib/starter.jar Main -np 4` |
+| Environment variables| `MPJ_HOME=/path/to/mpj`                        |
 
-5. Click Apply and run the project
+> Replace `/path/to/mpj` with the actual path to MPJ Express on this machine, for example `/home/user/mpj-v0_44`
 
 CONFIGURATION
 -------------
