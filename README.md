@@ -15,14 +15,14 @@ INTELLIJ SETUP
       Navigate to $MPJ_HOME/lib and select all .jar files
 
 3. Create a Run Configuration — go to Run → Edit Configurations → + → Application and set:
-   Main class: runtime.starter.MPJRun
-   VM options: -jar /path/to/mpj/lib/starter.jar Main -np 4
-   Environment variables: MPJ_HOME=/path/to/mpj
+ Main class: runtime.starter.MPJRun
+ VM options: -jar /path/to/mpj/lib/starter.jar Main -np 4
+ Environment variables: MPJ_HOME=/path/to/mpj
 
    Replace /path/to/mpj with the actual path to MPJ Express
    on this machine, for example /home/user/mpj-v0_44
 
-4. Click Apply and run the project
+5. Click Apply and run the project
 
 CONFIGURATION
 -------------
